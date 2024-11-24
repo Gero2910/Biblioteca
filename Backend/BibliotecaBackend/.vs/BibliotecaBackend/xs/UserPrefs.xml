@@ -5,8 +5,8 @@
     <Files>
       <File FileName="BibliotecaBackend/Models/Libro.cs" />
       <File FileName="BibliotecaBackend/Controllers/LibroController.cs" />
-      <File FileName="BibliotecaBackend/Program.cs" Line="20" Column="38" />
-      <File FileName="BibliotecaBackend/Dockerfile" Line="1" Column="1" />
+      <File FileName="BibliotecaBackend/Program.cs" />
+      <File FileName="BibliotecaBackend/Dockerfile" Line="13" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,6 +15,7 @@
             <Node name="BibliotecaBackend" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Dockerfile" selected="True" />
             </Node>
             <Node name="docker-compose" expanded="True" />
           </Node>

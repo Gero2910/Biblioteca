@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["BibliotecaBackend/BibliotecaBackend.csproj", "BibliotecaBackend/"]
+COPY ["Backend/BibliotecaBackend/BibliotecaBackend.csproj", "BibliotecaBackend/"]
 RUN dotnet restore "BibliotecaBackend/BibliotecaBackend.csproj"
 COPY . .
 WORKDIR "/src/BibliotecaBackend"

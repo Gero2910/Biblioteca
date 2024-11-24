@@ -1,0 +1,14 @@
+/Users/maca/Desktop/Publicaciones/BibliotecaBackend
+/Users/maca/Desktop/Publicaciones/appsettings.Development.json
+/Users/maca/Desktop/Publicaciones/appsettings.json
+/Users/maca/Desktop/Publicaciones/BibliotecaBackend.dll
+/Users/maca/Desktop/Publicaciones/BibliotecaBackend.deps.json
+/Users/maca/Desktop/Publicaciones/BibliotecaBackend.runtimeconfig.json
+/Users/maca/Desktop/Publicaciones/BibliotecaBackend.pdb
+/Users/maca/Desktop/Publicaciones/Docker.DotNet.dll
+/Users/maca/Desktop/Publicaciones/Microsoft.AspNetCore.OpenApi.dll
+/Users/maca/Desktop/Publicaciones/Microsoft.OpenApi.dll
+/Users/maca/Desktop/Publicaciones/Newtonsoft.Json.dll
+/Users/maca/Desktop/Publicaciones/Swashbuckle.AspNetCore.Swagger.dll
+/Users/maca/Desktop/Publicaciones/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/maca/Desktop/Publicaciones/Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  bibliotecabackend:
+    image: bibliotecabackend:dev
+    container_name: BibliotecaBackend
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "BibliotecaBackend"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bibliotecabackend$
+    volumes:
+      - /Users/maca/Projects/BibliotecaBackend/BibliotecaBackend:/app
+      - /Users/maca/Projects/BibliotecaBackend:/src
+      - /Users/maca/vsdbg/vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_bibliotecabackend$
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bibliotecabackend$ \"/app/bin/Debug/net7.0/BibliotecaBackend.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

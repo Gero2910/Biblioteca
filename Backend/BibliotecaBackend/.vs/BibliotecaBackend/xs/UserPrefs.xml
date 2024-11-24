@@ -1,4 +1,31 @@
-﻿<Properties StartupConfiguration="{628D77B8-58D4-4CE9-8089-0B739A2F2D71}|https">
+﻿<Properties StartupConfiguration="{C17F897C-EA6F-4AAE-8BDC-BC46BD7C883E}|Default">
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BibliotecaBackend FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BibliotecaBackend/Dockerfile">
+    <Files>
+      <File FileName="BibliotecaBackend/Models/Libro.cs" />
+      <File FileName="BibliotecaBackend/Controllers/LibroController.cs" />
+      <File FileName="BibliotecaBackend/Program.cs" Line="20" Column="38" />
+      <File FileName="BibliotecaBackend/Dockerfile" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BibliotecaBackend" expanded="True">
+            <Node name="BibliotecaBackend" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="docker-compose" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BibliotecaBackend PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

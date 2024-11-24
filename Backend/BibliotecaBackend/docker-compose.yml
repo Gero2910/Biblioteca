@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bibliotecabackend:
+    image: ${DOCKER_REGISTRY-}bibliotecabackend
+    build:
+      context: .
+      dockerfile: BibliotecaBackend/Dockerfile

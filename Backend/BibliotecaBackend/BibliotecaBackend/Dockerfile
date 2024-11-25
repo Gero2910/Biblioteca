@@ -9,11 +9,11 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 
 # Corrige la ruta aquí para que coincida con la estructura de carpetas
-COPY ["Backend/BibliotecaBackend/BibliotecaBackend.csproj", "BibliotecaBackend/"]
+COPY ["Backend/BibliotecaBackend/BibliotecaBackend/BibliotecaBackend.csproj", "BibliotecaBackend/"]
 RUN dotnet restore "BibliotecaBackend/BibliotecaBackend.csproj"
 
 COPY . .
-WORKDIR "/src/BibliotecaBackend"
+WORKDIR "/src/BibliotecaBackend/BibliotecaBackend"
 RUN dotnet build "BibliotecaBackend.csproj" -c Release -o /app/build
 
 # Etapa de publicación

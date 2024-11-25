@@ -8,13 +8,13 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 
-# Ajusta la ruta del archivo .csproj
-COPY ["Backend/BibliotecaBackend/BibliotecaBackend.csproj", "BibliotecaBackend/"]
-RUN dotnet restore "BibliotecaBackend/BibliotecaBackend.csproj"
+# Copiar el archivo .csproj correctamente (ruta corregida)
+COPY ["BibliotecaBackend/BibliotecaBackend.csproj", "."]
+RUN dotnet restore "BibliotecaBackend.csproj"
 
 # Copiar el resto de los archivos
 COPY . .
-WORKDIR "/src/BibliotecaBackend"
+WORKDIR "/src/BibliotecaBackend/BibliotecaBackend"
 RUN dotnet build "BibliotecaBackend.csproj" -c Release -o /app/build
 
 # Etapa de publicación
